@@ -27,10 +27,10 @@ async def event_ready():
 @bot.event()
 async def event_message(ctx):
     # 'Runs every time a message is sent in chat.'
-    print(ctx)
+    print(ctx.content)
 
     # make sure the bot ignores itself and the streamer
-    if ctx.Chatter.name.lower() == os.environ['BOT_NICK'].lower():
+    if ctx.author.name.lower() == os.environ['BOT_NICK'].lower():
         return
 
     await bot.handle_commands(ctx)
@@ -40,8 +40,11 @@ async def event_message(ctx):
     if randint(1, 30) == 15:
         a=1
         await ctx.channel.send('15 anos no Brasil e não fala um portugues sem sotaque')
-    if randint(1, 10) == 5 and a == 0:
+    if (randint(1, 10) == 5) and a == 0:
         await ctx.channel.send('Bota um funk ai pra nois Boludo')
+    print(ctx.author.is_mod)
+    if randint(1, 5) == 3 and ctx.author.is_mod:
+        await ctx.channel.send(f'Mod é broxa @{ctx.author.name}')
     a=0
     if 'salve' in ctx.content.lower():
         await ctx.channel.send(f"Salve, @{ctx.author.name}!")
