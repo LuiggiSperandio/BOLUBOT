@@ -30,7 +30,7 @@ async def event_message(ctx):
     print(ctx)
 
     # make sure the bot ignores itself and the streamer
-    if ctx.author.name.lower() == os.environ['BOT_NICK'].lower():
+    if ctx.Chatter.name.lower() == os.environ['BOT_NICK'].lower():
         return
 
     await bot.handle_commands(ctx)
