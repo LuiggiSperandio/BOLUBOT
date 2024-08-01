@@ -6,8 +6,7 @@ c = "What a load of - (toilet flush)"
 
 d = """Allstar - by Smashmouth begins to play. Shrek goes about his day. While in a nearby town, the villagers get together to go after the ogre."""
 
-e="""NIGHT - NEAR SHREK'S HOME
-"""
+e="""NIGHT - NEAR SHREK'S HOME"""
 
 f = "MAN1: Think it's in there?"
 

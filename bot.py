@@ -37,14 +37,15 @@ async def event_message(ctx):
 
     #Roleta Russa do funk
     a=0
-    if randint(1, 30) == 15:
+    if randint(1, 5) == 3 and ctx.author.is_mod:
+        a=1
+        await ctx.channel.send(f'Mod é broxa @{ctx.author.name}')
+    if (randint(1, 30) == 15) and a == 0:
         a=1
         await ctx.channel.send('15 anos no Brasil e não fala um portugues sem sotaque')
     if (randint(1, 10) == 5) and a == 0:
         await ctx.channel.send('Bota um funk ai pra nois Boludo')
     print(ctx.author.is_mod)
-    if randint(1, 5) == 3 and ctx.author.is_mod:
-        await ctx.channel.send(f'Mod é broxa @{ctx.author.name}')
     a=0
     if 'salve' in ctx.content.lower():
         await ctx.channel.send(f"Salve, @{ctx.author.name}!")
