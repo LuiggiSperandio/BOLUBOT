@@ -1,10 +1,7 @@
 
 # boluBOT
 
-<!-- ![boluBOT](https://th.bing.com/th/id/OIG1.VDfrbpS1yP337iQMobox?pid=ImgGn) -->
-<center>
-    <img src="https://th.bing.com/th/id/OIG1.VDfrbpS1yP337iQMobox?pid=ImgGn" alt="boluBOT himself" width="300">
-</center>
+<img src="https://th.bing.com/th/id/OIG1.VDfrbpS1yP337iQMobox?pid=ImgGn" alt="boluBOT himself" style="display: block; margin-left: auto; margin-right: auto;" width="300">
 
 Bolubot is a Twitch chat bot built using the Twitchio library. It is designed to interact with viewers, provide commands, and enhance the streaming experience on Twitch.
 
@@ -18,6 +15,7 @@ Bolubot is a Twitch chat bot built using the Twitchio library. It is designed to
 
 - **Python:** Version 3.6 or higher
 - **Twitchio:** A Python library for interacting with the Twitch Chat.
+- **Dotenv:** A Python library for interacting with .env files.
 
 ## Installation
 
@@ -31,7 +29,7 @@ Bolubot is a Twitch chat bot built using the Twitchio library. It is designed to
 2. **Install the required packages:**
 
    ```bash
-   pip install twitchio
+   pip install twitchio python-dotenv
    ```
 
 ## Usage
