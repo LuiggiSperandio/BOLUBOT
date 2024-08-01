@@ -40,6 +40,11 @@ async def event_message(ctx):
 
     await bot.handle_commands(ctx)
 
+    # Salve Check
+    if 'salve' in ctx.content.lower():
+        await ctx.channel.send(f"Salve, @{ctx.author.name}!")
+        return
+
     # Bot agression check  
     if bool(re.search('bot.*(burro|troxa|otario)', ctx.content.lower())):
         await ctx.channel.send('BibleThump')
@@ -59,12 +64,12 @@ async def event_message(ctx):
     if bool(re.search(' oda | adair ', ctx.content.lower())):
         await ctx.channel.send('Meu deus!!! Falou algo pesado aí, aqui chegou a cair a conexão com o chat! LUL')
         return
-
-    # Salve Check
-    if 'salve' in ctx.content.lower():
-        await ctx.channel.send(f"Salve, @{ctx.author.name}!")
+        
+    # Pal check
+    if bool(re.search('(ão$|ao$)', ctx.content.lower())):
+        await ctx.channel.send(f'Meu pau na tua mão! LUL @{ctx.author.name}')
         return
-    
+
     #Roleta Russa
     a=0
     # Mod micro agression
