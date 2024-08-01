@@ -15,6 +15,7 @@ Bolubot is a Twitch chat bot built using the Twitchio library. It is designed to
 
 - **Python:** Version 3.6 or higher
 - **Twitchio:** A Python library for interacting with the Twitch Chat.
+- **Dotenv:** A Python library for interacting with .env files.
 
 ## Installation
 
@@ -28,7 +29,7 @@ Bolubot is a Twitch chat bot built using the Twitchio library. It is designed to
 2. **Install the required packages:**
 
    ```bash
-   pip install twitchio
+   pip install twitchio python-dotenv
    ```
 
 ## Usage
