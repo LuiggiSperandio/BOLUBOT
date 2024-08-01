@@ -47,11 +47,11 @@ async def event_message(ctx):
 
     # Soneca Check
     if bool(re.search(' soneca ', ctx.content.lower())):
-        await ctx.channel.send('PogChamp Oda mentioned PogChamp')
+        await ctx.channel.send(f'soneca é gente fina demais né não, @{ctx.author.name}?')
         return
 
     # Enzo Check
-    if bool(re.search(' soneca ', ctx.content.lower())):
+    if bool(re.search(' enzo ', ctx.content.lower())):
         await ctx.channel.send('PogChamp Enzo mentioned PogChamp')
         return
 
