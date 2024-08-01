@@ -41,7 +41,7 @@ async def event_message(ctx):
     await bot.handle_commands(ctx)
 
     # Bot agression check  
-    if bool(re.search('bot.*burro', ctx.content.lower())):
+    if bool(re.search('bot.*(burro|troxa|otario)', ctx.content.lower())):
         await ctx.channel.send('BibleThump')
         return
 
