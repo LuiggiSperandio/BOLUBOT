@@ -4,7 +4,7 @@ import text_archive
 from random import randint
 import re
 
-from dotenv import load_dotenv()
+from dotenv import load_dotenv
 load_dotenv()
 
 # set up the bot
