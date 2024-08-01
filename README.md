@@ -1,9 +1,7 @@
 
 # boluBOT
 
-<div style="text-align: center;">
-    <img src="https://th.bing.com/th/id/OIG1.VDfrbpS1yP337iQMobox?pid=ImgGn" alt="boluBOT himself" width="300">
-</div>
+<img src="https://th.bing.com/th/id/OIG1.VDfrbpS1yP337iQMobox?pid=ImgGn" alt="boluBOT himself" style="display: block; margin-left: auto; margin-right: auto;" width="300">
 
 Bolubot is a Twitch chat bot built using the Twitchio library. It is designed to interact with viewers, provide commands, and enhance the streaming experience on Twitch.
 
